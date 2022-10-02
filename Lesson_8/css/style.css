@@ -374,7 +374,7 @@ a:last-child img:hover {
     box-shadow: 5px 5px 5px #000;
     text-decoration: underline;
 }
-.visited {
+.visited:nth-child(3) {
     background-color: #fff;
     color: #000;
 }
