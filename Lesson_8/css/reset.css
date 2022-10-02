@@ -12,8 +12,8 @@ li {
     list-style: none;
 }
 a {
-    color: inherit;
     text-decoration: none;
+    color: inherit;
 }
 img {
     vertical-align: top;
@@ -41,3 +41,4 @@ button {
 body {
     line-height: 1;
 }
+
