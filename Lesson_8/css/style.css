@@ -426,7 +426,7 @@ a:last-child img:hover {
     font-size: 50px;
     color: rgba(206, 203, 7, 0.962);
     text-align: center;
-    letter-spacing: 1.2;
+    letter-spacing: 1.2px;
     padding: 30px;
 }
 .text-five p:hover:nth-child(odd),
