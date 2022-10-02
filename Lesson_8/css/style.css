@@ -1,0 +1,467 @@
+.wrapper {
+    font-family: "Lato";
+    color: #424551;
+}
+[class*="_container"] {
+    max-width: 1230px;
+    margin: 0 auto;
+}
+.page__title {
+    margin-bottom: 40px;
+}
+.page__title h2 {
+    padding-top: 10px;
+    font-weight: 900;
+    font-size: 46px;
+    line-height: 130%;
+    color: #1e212c;
+}
+.page__text {
+    margin-bottom: 40px;
+}
+.page__text p {
+    line-height: 160%;
+    color: #424551;
+}
+.page__headline {
+    margin-bottom: 24px;
+}
+.page__headline h2 {
+    color: #1e212c;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 150%;
+}
+.page__headline h2::after {
+    content: ":";
+}
+.page__list li {
+    padding-left: 32px;
+}
+.page__list li::before {
+    background: url("../img/icon/check.svg") 0 0 no-repeat;
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-bottom: -3px;
+    margin-right: 16px;
+    margin-left: -32px;
+}
+.page__list li:not(:last-child) {
+    margin-bottom: 4px;
+}
+.page__list {
+    margin-bottom: 100px;
+}
+.heading h2:first-child {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #1e212c;
+}
+.heading h2:nth-child(2) {
+    margin-bottom: 16px;
+    font-weight: 900;
+    font-size: 46px;
+    line-height: 130%;
+    color: #1e212c;
+}
+.heading {
+    margin-bottom: 32px;
+}
+.heading p:last-child {
+    font-size: 20px;
+    line-height: 150%;
+    color: #787a80;
+}
+.page__statistic {
+    margin-bottom: 32px;
+}
+.page__statistic li {
+    font-weight: 700;
+    line-height: 160%;
+    color: #424551;
+}
+.page__socials li {
+    display: inline-block;
+}
+.page__socials img {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+}
+.page__socials img:not(:last-child) {
+    margin-left: 4px;
+}
+
+a:last-child img:hover {
+    content: url("../img/icon/Linked-In-Red.svg");
+    width: 24px;
+    height: 24px;
+}
+.page__statistic li:first-child {
+    padding-left: 32px;
+    background: url("../img/icon/play-red.svg") 0 5px no-repeat;
+}
+.page__statistic li:nth-child(2) {
+    padding-left: 32px;
+    background: url("../img/icon/Star-stroke.svg") 0 5px no-repeat;
+}
+.page__statistic li:nth-child(3) {
+    padding-left: 32px;
+    background: url("../img/icon/play-red.svg") 0 5px no-repeat;
+}
+.page {
+    margin-bottom: 50px;
+}
+/* ---------------- Game------------- */
+.game__title {
+    font-size: 50px;
+    text-align: center;
+    font-style: oblique;
+    color: tomato;
+    text-shadow: 2px 2px 5px #000;
+    text-transform: uppercase;
+    letter-spacing: 7px;
+}
+.game {
+    background-color: #424551;
+    max-width: 1000px;
+    height: 500px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    padding-top: 30px;
+}
+.game__start {
+    background: url("../img/game__icon/1844097-start-line-vector-design-illustration-isolated-on-white-background-grátis-vetor.jpg")
+        0 0 / cover no-repeat;
+    width: 102px;
+    height: 50px;
+    border: 2px dotted red;
+    margin-left: 10px;
+}
+.line__one {
+    background-color: yellow;
+    width: 200px;
+    height: 20px;
+    margin-left: 111px;
+    margin-top: -35px;
+
+    opacity: 0;
+}
+.line__two {
+    background-color: yellow;
+    width: 30px;
+    height: 120px;
+    margin-left: 281px;
+}
+.line__three {
+    background-color: yellow;
+    width: 100px;
+    height: 30px;
+    margin-left: 211px;
+}
+.line__four {
+    background-color: yellow;
+    width: 30px;
+    height: 100px;
+    margin-left: 211px;
+    margin-top: -100px;
+}
+.line__five {
+    background-color: yellow;
+    width: 100px;
+    height: 20px;
+    margin-left: 130px;
+    margin-top: -100px;
+}
+.line__six {
+    background-color: yellow;
+    width: 20px;
+    height: 100px;
+    margin-left: 130px;
+}
+.line__seven {
+    background-color: yellow;
+    width: 15px;
+    height: 150px;
+    margin-left: 130px;
+}
+
+.line__eight {
+    background-color: yellow;
+    width: 105px;
+    height: 20px;
+    margin-left: 40px;
+}
+.line__nine {
+    background-color: yellow;
+    width: 20px;
+    height: 100px;
+    margin-left: 40px;
+}
+.line__ten {
+    background-color: yellow;
+    width: 330px;
+    height: 20px;
+    margin-left: 40px;
+}
+.line__eleven {
+    background-color: yellow;
+    width: 20px;
+    height: 105px;
+    margin-left: 350px;
+    margin-top: -110px;
+}
+.line__twelve {
+    background-color: yellow;
+    width: 110px;
+    height: 20px;
+    margin-left: 350px;
+    margin-top: -110px;
+}
+.line__thirteen {
+    background-color: yellow;
+    width: 20px;
+    height: 100px;
+    margin-left: 440px;
+    margin-top: -110px;
+}
+.line__fourteen {
+    background-color: yellow;
+    width: 110px;
+    height: 20px;
+    margin-left: 440px;
+    margin-top: -110px;
+}
+.line__fifteen {
+    background-color: yellow;
+    width: 20px;
+    height: 100px;
+    margin-left: 530px;
+    margin-top: -110px;
+}
+.line__sixteen {
+    background-color: yellow;
+    width: 110px;
+    height: 20px;
+    margin-left: 530px;
+    margin-top: -110px;
+}
+.line__seventeen {
+    background-color: yellow;
+    width: 20px;
+    height: 210px;
+    margin-left: 620px;
+}
+.line__eighteen {
+    background-color: yellow;
+    width: 210px;
+    height: 20px;
+    margin-left: 620px;
+}
+.line__nineteen {
+    background-color: yellow;
+    width: 20px;
+    height: 50px;
+    margin-left: 810px;
+}
+.line__twenty {
+    background-color: yellow;
+    width: 100px;
+    height: 20px;
+    margin-left: 810px;
+}
+.game__finish {
+    margin-left: 910px;
+    background: url("../img/game__icon/OIP.jfif") 0 0 / cover no-repeat;
+    width: 90px;
+    height: 50px;
+    border: 2px dotted red;
+    margin-top: -30px;
+}
+.game__start ~ div {
+    visibility: hidden;
+    opacity: 0;
+}
+.game__start:hover + div {
+    visibility: visible;
+    opacity: 1;
+}
+.game__container div:last-child {
+    visibility: visible;
+    opacity: 1;
+}
+.line__one:hover,
+.line__two:hover,
+.line__three:hover,
+.line__four:hover,
+.line__five:hover,
+.line__seven:hover,
+.line__eight:hover,
+.line__nine:hover,
+.line__ten:hover,
+.line__eleven:hover,
+.line__twelve:hover,
+.line__thirteen:hover,
+.line__fourteen:hover,
+.line__fifteen:hover,
+.line__sixteen:hover,
+.line__seventeen:hover,
+.line__eighteen:hover,
+.line__nineteen:hover,
+.line__twenty:hover,
+.game__finish:hover {
+    visibility: visible;
+    opacity: 1;
+}
+.line__one:hover + div,
+.line__two:hover + div,
+.line__three:hover + div,
+.line__four:hover + div,
+.line__five:hover + div,
+.line__seven:hover + div,
+.line__eight:hover + div,
+.line__nine:hover + div,
+.line__ten:hover + div,
+.line__eleven:hover + div,
+.line__twelve:hover + div,
+.line__thirteen:hover + div,
+.line__fourteen:hover + div,
+.line__fifteen:hover + div,
+.line__sixteen:hover + div,
+.line__seventeen:hover + div,
+.line__eighteen:hover + div,
+.line__nineteen:hover + div,
+.line__twenty:hover + div,
+.game__finish:hover + div {
+    visibility: visible;
+    opacity: 1;
+}
+/* ------------- pseudo-classes--------------*/
+.pseudo-classes__state li {
+    display: inline-block;
+}
+.pseudo-classes__state ul {
+    margin-left: 230px;
+    margin-bottom: 100px;
+}
+.pseudo-classes__state li a {
+    font-size: 40px;
+    border: 2px solid #000;
+    border-radius: 30px;
+    padding: 10px;
+    color: #fff;
+    margin-left: 10px;
+}
+.hover {
+    background-color: #058215b9;
+}
+.hover:hover {
+    background-color: red;
+    box-shadow: 5px 5px 5px #000;
+    text-decoration: underline;
+}
+
+.active {
+    background-color: rgba(133, 155, 6, 0.785);
+}
+.active:active {
+    background-color: rgba(33, 2, 190, 0.793);
+    box-shadow: 5px 5px 5px #000;
+    text-decoration: underline;
+}
+.visited {
+    background-color: #fff;
+    color: #000;
+}
+
+.visited:visited {
+    background-color: purple;
+    box-shadow: 5px 5px 5px #000;
+    text-decoration: underline;
+}
+.focus {
+    background-color: rgb(6, 100, 158);
+    box-shadow: none;
+}
+.focus:focus {
+    background-color: rgb(39, 189, 16);
+    text-decoration: underline;
+    box-shadow: 15px 15px 15px #000, inset 15px 15px 15px #000;
+}
+.target {
+    background-color: rgb(6, 11, 97);
+}
+.text-target {
+    font-size: 50px;
+    color: rgb(90, 4, 93);
+    background-color: green;
+    text-align: center;
+    padding: 30px;
+    display: none;
+}
+.text-target:target {
+    display: block;
+}
+
+.text-one,
+.text-two,
+.text-three,
+.text-four,
+.text-five,
+.text-six,
+.text-seven,
+.text-eight,
+.text-nive,
+.text-ten {
+    background-color: rgb(37, 10, 147);
+    margin-bottom: 30px;
+}
+.text-ten ul li,
+.text-four > div,
+.text-two > div,
+.pseudoclasses__position * p {
+    font-size: 50px;
+    color: rgba(206, 203, 7, 0.962);
+    text-align: center;
+    letter-spacing: 1.2;
+    padding: 30px;
+}
+.text-five p:hover:nth-child(odd),
+.text-six p:hover:nth-child(even),
+.text-one p:hover:first-child,
+.text-two p:hover:first-of-type,
+.text-three p:hover:last-child,
+.text-four p:hover:last-of-type,
+.text-seven p:hover:nth-child(3),
+.text-eight p:hover:not(:nth-child(2)) {
+    color: red;
+    background-color: #000;
+}
+.text-nive p:hover::before,
+.text-nive p:hover::after {
+    background: url("../img/icon/Star-stroke.svg") 0 0 / contain no-repeat;
+    content: "";
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+}
+.text-ten ul ul {
+    display: none;
+}
+.text-ten li:hover ul {
+    display: block;
+}
+.top {
+    font-size: 60px;
+    background-color: rgb(163, 197, 16);
+    text-align: center;
+    padding: 30px;
+    text-decoration: underline;
+    text-transform: capitalize;
+    display: block;
+}
