@@ -349,7 +349,7 @@ a:last-child img:hover {
     margin-left: 230px;
     margin-bottom: 100px;
 }
-.pseudo-classes__state li a {
+.pseudo-classes__state li a:not(:nth-child(3)) {
     font-size: 40px;
     border: 2px solid #000;
     border-radius: 30px;
