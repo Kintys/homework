@@ -53,6 +53,9 @@ blockquote {
     line-height: 160%;
     color: #424551;
 }
+li:not(:last-child) {
+    margin-bottom: 7px;
+}
 
 .list__item::before {
     background: url("../img/icon/check.svg") 0 0 no-repeat;
