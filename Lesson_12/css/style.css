@@ -1,0 +1,205 @@
+.wrapper {
+    overflow: hidden;
+}
+body {
+}
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 15px;
+    background: rgba(0, 130, 24, 0.608);
+    z-index: 100;
+}
+.header__container {
+    max-width: 800px;
+}
+.menu {
+    font-size: 0;
+    margin-left: 100px;
+}
+.menu__item {
+    display: inline-block;
+    position: relative;
+    text-align: justify;
+}
+.menu__item:hover .submenu {
+    opacity: 1;
+    visibility: visible;
+    top: 100%;
+}
+.menu__item:not(:last-child) {
+    margin-right: 50px;
+}
+.submenu {
+    position: absolute;
+    top: 130%;
+    left: -60px;
+    padding: 15px;
+    background: rgba(124, 3, 3, 0.563);
+    min-width: 200px;
+    text-align: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s ease 0s;
+}
+.submenu__item:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.submenu__link {
+    font-size: 24px;
+}
+.menu__link {
+    font-size: 24px;
+    display: inline-block;
+    padding: 5px 5px;
+}
+main {
+    padding-top: 250px;
+}
+.section__container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.section__item {
+    position: relative;
+    height: 200px;
+    width: 200px;
+    background-color: yellowgreen;
+    margin-left: 30%;
+    margin-bottom: 200px;
+    transition: all 0.5s linear 0.1s;
+    border-radius: 15px;
+}
+.section__item:not(:last-child) {
+    margin-right: 50px;
+}
+.section__object {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background: brown;
+    top: 0;
+    left: 0;
+    border-radius: 15px;
+}
+.section__text {
+    padding-top: 90px;
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+}
+.section__item:first-child:hover .section__object:nth-child(2) {
+    transition: all 0.5s linear 0s;
+    transform: translate(-220px, 70px);
+}
+.section__item:first-child:hover .section__object:nth-child(3) {
+    transition: all 0.5s linear 0.5s;
+    transform: translate(220px, 70px);
+}
+.section__item:first-child:hover .section__object:nth-child(4) {
+    transition: all 0.5s linear 1s;
+    transform: translate(220px, -150px);
+}
+.section__item:first-child:hover .section__object:nth-child(5) {
+    transition: all 0.5s linear 1.5s;
+    transform: translate(-220px, -150px);
+}
+.section__item:nth-child(2) .section__object {
+    transform: scale(0, 5);
+}
+.section__item:nth-child(2):hover .section__object {
+    transform: scale(1, 1);
+    transition: all 1s ease 0s;
+}
+.section__item:nth-child(3):hover .section__object:nth-child(2) {
+    transform: rotate(360deg);
+    transition: all 10s ease 0s;
+}
+.section__item:nth-child(3):hover .section__object:nth-child(3) {
+    transform: rotate(360deg);
+    transition: all 10s ease 0.4s;
+}
+.section__item:nth-child(3):hover .section__object:nth-child(4) {
+    transform: rotate(-360deg);
+    transition: all 10s ease 0.7s;
+}
+.section__item:nth-child(4):hover {
+    transform: skew(-20deg);
+}
+.section__item:nth-child(4):hover .section__object:nth-child(2) {
+    transform: skew(20deg);
+}
+.section__item:nth-child(5):hover .section__object:nth-child(2) {
+    animation: door 3s ease forwards;
+}
+@keyframes door {
+    0% {
+    }
+    60% {
+        transform-origin: 10px 0;
+        transform: rotate(20deg);
+    }
+    80% {
+        transform-origin: 10px 0;
+        transform: rotate(15deg);
+    }
+    90% {
+        transform-origin: 0 0;
+        transform: rotate(10deg);
+    }
+    100% {
+        transform-origin: 0 0;
+        transform: rotate(20deg);
+    }
+}
+.section__item:nth-child(6) {
+    perspective: 400px;
+    perspective-origin: 50px 20px;
+}
+.section__item:nth-child(6):hover .section__object:nth-child(1) {
+    transform: rotateX(50deg);
+    transition: all 1s ease-out 0s;
+}
+.section__item:nth-child(7) {
+    perspective: 200px;
+    transform-style: flat;
+}
+.section__item:nth-child(7):hover .section__object:nth-child(2) {
+    transform: rotateY(50deg);
+    transition: all 0.5s linear 0s;
+}
+.section__item:nth-child(8) {
+    transform-style: preserve-3d;
+    transition: all 0.8s ease 0s;
+    perspective: 200px;
+}
+.section__item:nth-child(8):hover .section__object:nth-child(2) {
+    transition: all 0.8s ease 0s;
+    transform: rotateY(-60deg);
+}
+.section__item:nth-child(9) {
+    position: relative;
+    transform-style: preserve-3d;
+    background: brown;
+}
+
+.section__item:nth-child(9):hover .section__object:nth-child(1) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    z-index: 2;
+    transform: rotateY(0deg);
+    backface-visibility: hidden;
+}
+
+.section__item:nth-child(9):hover {
+    transform: rotateY(-180deg);
+    background: #000;
+}
