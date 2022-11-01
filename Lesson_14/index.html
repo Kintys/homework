@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="zxx">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/style.css">
+        <title>Lesson 14</title>
+    </head>
+    <body>
+        <header class="header">
+            <div class="header__container">
+                <h2 class="header__title">Header</h2>
+            </div>
+        </header>
+        <main class="main">
+            <div class="page">
+                <div class="page__container">
+                    <div class="page__title">
+                        <h2>Flex</h2>
+                    </div>
+                    <div class="page__block flex">
+                        <div class="flex__item">1</div>
+                        <div class="flex__item">2</div>
+                        <div class="flex__item">3</div>
+                        <div class="flex__item">4</div>
+                    </div>
+                    <div class="page__title">
+                        <h2>Flex inline</h2>
+                    </div>
+                    <div class="page__block flex flex--inline">
+                        <div class="flex__item">1</div>
+                        <div class="flex__item">2</div>
+                        <div class="flex__item">3</div>
+                        <div class="flex__item">4</div>
+                    </div>
+                    <div class="page__title">
+                        <h2>Flex wrap</h2>
+                    </div>
+                    <div class="page__block flex flex--wrap">
+                        <div class="flex__item">1</div>
+                        <div class="flex__item">2</div>
+                        <div class="flex__item">3</div>
+                        <div class="flex__item">4</div>
+                    </div>
+                    <div class="page__title">
+                        <h2>justify-content flex-start</h2>
+                    </div>
+                    <div class="page__block flex flex--start">
+                        <div class="flex__item">1</div>
+                        <div class="flex__item">2</div>
+                        <div class="flex__item">3</div>
+                        <div class="flex__item">4</div>
+                    </div>
+                    <div class="page__title">
+                        <h2>justify-content flex-end</h2>
+                    </div>
+                    <div class="page__block flex flex--end">
+                        <div class="flex__item">1</div>
+                        <div class="flex__item">2</div>
+                        <div class="flex__item">3</div>
+                        <div class="flex__item">4</div>
+                    </div>
+                    <div class="page__title">
+                        <h2>justify-content center</h2>
+                    </div>
+                    <div class="page__block flex flex--center">
+                        <div class="flex__item">1</div>
+                        <div class="flex__item">2</div>
+                        <div class="flex__item">3</div>
+                        <div class="flex__item">4</div>
+                    </div>
+                    <div class="page__title">
+                        <h2>justify-content space-between</h2>
+                    </div>
+                    <div class="page__block flex flex--space-between">
+                        <div class="flex__item">1</div>
+                        <div class="flex__item">2</div>
+                        <div class="flex__item">3</div>
+                        <div class="flex__item">4</div>
+                    </div>
+                    <div class="page__title">
+                        <h2>justify-content space-around</h2>
+                    </div>
+                    <div class="page__block flex flex--space-around">
+                        <div class="flex__item">1</div>
+                        <div class="flex__item">2</div>
+                        <div class="flex__item">3</div>
+                        <div class="flex__item">4</div>
+                    </div>
+                    <div class="page__title">
+                        <h2>justify-content space-evenly</h2>
+                    </div>
+                    <div class="page__block flex flex--space-evenly">
+                        <div class="flex__item">1</div>
+                        <div class="flex__item">2</div>
+                        <div class="flex__item">3</div>
+                        <div class="flex__item">4</div>
+                    </div>
+                    <div class="page__title">
+                        <h2>align-items flex-start</h2>
+                    </div>
+                    <div class="page__block flex flex--align-items">
+                        <div class="flex__item">1</div>
+                        <div class="flex__item">2</div>
+                        <div class="flex__item">3</div>
+                        <div class="flex__item">4</div>
+                    </div>
+                    <div class="page__title">
+                        <h2>align-items flex-end</h2>
+                    </div>
+                    <div class="page__block flex flex--align-items-end">
+                        <div class="flex__item">1</div>
+                        <div class="flex__item">2</div>
+                        <div class="flex__item">3</div>
+                        <div class="flex__item">4</div>
+                    </div>
+                    <div class="page__title">
+                        <h2>align-items center</h2>
+                    </div>
+                    <div class="page__block flex flex--align-items-center">
+                        <div class="flex__item">1</div>
+                        <div class="flex__item">2</div>
+                        <div class="flex__item">3</div>
+                        <div class="flex__item">4</div>
+                    </div>
+                    <div class="page__title">
+                        <h2>flex-direction row-reverse</h2>
+                    </div>
+                    <div class="page__block flex flex--row-reverse">
+                        <div class="flex__item">1</div>
+                        <div class="flex__item">2</div>
+                        <div class="flex__item">3</div>
+                        <div class="flex__item">4</div>
+                    </div>
+                    <div class="page__title">
+                        <h2>flex-direction column</h2>
+                    </div>
+                    <div class="page__block flex flex--column">
+                        <div class="flex__item">1</div>
+                        <div class="flex__item">2</div>
+                        <div class="flex__item">3</div>
+                        <div class="flex__item">4</div>
+                    </div>
+                    <div class="page__title">
+                        <h2>flex-direction column-reverse</h2>
+                    </div>
+                    <div class="page__block flex flex--column-reverse">
+                        <div class="flex__item">1</div>
+                        <div class="flex__item">2</div>
+                        <div class="flex__item">3</div>
+                        <div class="flex__item">4</div>
+                    </div>
+                    <div class="page__title">
+                        <h2>flex-direction gap-column/gap-row</h2>
+                    </div>
+                    <div class="page__block flex flex--gap-column-row">
+                        <div class="flex__item">1</div>
+                        <div class="flex__item">2</div>
+                        <div class="flex__item">3</div>
+                        <div class="flex__item">4</div>
+                    </div>
+                    <div class="page__title">
+                        <h2>flex-element align-self</h2>
+                    </div>
+                    <div class="page__block flex flex--align-self">
+                        <div class="flex__item">1</div>
+                        <div class="flex__item">2</div>
+                        <div class="flex__item">3</div>
+                        <div class="flex__item">4</div>
+                    </div>
+                    <div class="page__title">
+                        <h2>flex-element flex-grow</h2>
+                    </div>
+                    <div class="page__block flex flex--grow">
+                        <div class="flex__item">1</div>
+                        <div class="flex__item">2</div>
+                        <div class="flex__item">3</div>
+                        <div class="flex__item">4</div>
+                    </div>
+                    <div class="page__title">
+                        <h2>flex-element flex-shrink</h2>
+                    </div>
+                    <div class="page__block flex flex--shrink">
+                        <div class="flex__item">1</div>
+                        <div class="flex__item">20000000</div>
+                        <div class="flex__item">3</div>
+                        <div class="flex__item">4</div>
+                    </div>
+                    <div class="page__title">
+                        <h2>flex-element flex-basis</h2>
+                    </div>
+                    <div class="page__block flex flex--basis">
+                        <div class="flex__item">1</div>
+                        <div class="flex__item">2</div>
+                        <div class="flex__item">3</div>
+                        <div class="flex__item">4</div>
+                    </div>
+                    <div class="page__title">
+                        <h2>flex-element flex-order</h2>
+                    </div>
+                    <div class="page__block flex flex--order">
+                        <div class="flex__item">1</div>
+                        <div class="flex__item">2</div>
+                        <div class="flex__item">3</div>
+                        <div class="flex__item">4</div>
+                    </div>
+                    <div id="id-card" class="page__cards">
+                        <div class="card">
+                            <div class="card__column">
+                                <div class="card__image">
+                                    <img src="img/main/08.png" alt="picture">
+                                </div>
+                                <div class="card__text">
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Sint quis cupiditate
+                                    inventore
+                                    officiis adipisci iusto id deleniti cum
+                                    dolores
+                                    earum. Tenetur nesciunt, aliquam enim
+                                    delectus
+                                    sit illum maiores nulla exercitationem?Lor
+                                    inventore
+                                    officiis adipisci iusto id deleniti cum
+                                    dolores
+                                    earum. Tenetur nesciunt, aliquam enim
+                                    delectus
+                                    sit illum maiores nulla exercitationem?
+                                </div>
+                                <div class="card__button">
+                                    <a href="#id-card">View more</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card__column">
+                                <div class="card__image">
+                                    <img src="img/main/06.png"
+                                        alt="picture">
+                                </div>
+                                <div class="card__text">
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Sint quis cupiditate
+                                    inventore
+                                    officiis adipisci iusto id deleniti cum
+                                    dolores
+                                    earum. Tenetur nesciunt, aliquam enim
+                                    delectus
+                                    sit illum maiores nulla exercitationem?
+                                </div>
+                                <div class="card__button">
+                                    <a href="#id-card">View more
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card__column">
+                                <div class="card__image">
+                                    <img src="img/main/10.png"
+                                        alt="picture">
+                                </div>
+                                <div class="card__text">
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Sint quis cupiditate
+                                    inventore
+                                    officiis adipisci iusto id deleniti cum
+                                    dolores
+                                    earum. Tenetur nesciunt, aliquam enim
+                                    delectus
+                                    sit illum maiores nulla exercitationem?
+                                </div>
+                                <div class="card__button">
+                                    <a href="#id-card">View more
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card__column">
+                                <div class="card__image">
+                                    <img class="card__picture"
+                                        src="img/main/01.png"
+                                        alt="picture">
+                                </div>
+                                <div class="card__text">
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Sint quis cupiditate
+                                    inventore
+                                    officiis adipisci iusto id deleniti cum
+                                    dolores
+                                    earum. Tenetur nesciunt, aliquam enim
+                                    delectus
+                                    sit illum maiores nulla exercitationem?
+                                </div>
+                                <div class="card__button">
+                                    <a href="#id-card">View more
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card__column">
+                                <div class="card__image">
+                                    <img src="img/main/08.png"
+                                        alt="picture">
+                                </div>
+                                <div class="card__text">
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Sint quis cupiditate
+                                    inventore
+                                    officiis adipisci iusto id deleniti cum
+                                    dolores
+                                    earum. Tenetur nesciunt, aliquam enim
+                                    delectus
+                                    sit illum maiores nulla exercitationem?
+                                </div>
+                                <div class="card__button">
+                                    <a href="#id-card">Buttom
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card__column">
+                                <div class="card__image">
+                                    <img src="img/main/06.png"
+                                        alt="picture">
+                                </div>
+                                <div class="card__text">
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Sint quis cupiditate
+                                    inventore
+                                    officiis adipisci iusto id deleniti cum
+                                    dolores
+                                    earum. Tenetur nesciunt, aliquam enim
+                                    delectus
+                                    sit illum maiores nulla exercitationem?
+                                    earum. Tenetur nesciunt, aliquam enim
+                                    delectus
+                                    sit illum maiores nulla exercitationem?Lor
+                                    inventore
+                                    officiis adipisci iusto id deleniti cum
+                                    dolores
+                                    earum. Tenetur nesciunt, aliquam enim
+                                    delectus
+                                    sit illum maiores nulla exercitationem?
+                                </div>
+                                <div class="card__button">
+                                    <a href="#id-card">Buttom
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card__column">
+                                <div class="card__image">
+                                    <img src="img/main/09.png"
+                                        alt="picture">
+                                </div>
+                                <div class="card__text">
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Sint quis cupiditate
+                                    inventore
+                                    officiis adipisci iusto id deleniti cum
+                                    dolores
+                                    earum. Tenetur nesciunt, aliquam enim
+                                    delectus
+                                    sit illum maiores nulla
+                                    exercitationem?Lorem, ipsum dolor sit amet
+                                    consectetur
+                                    adipisicing
+                                    elit. Ad laboriosam aut et ducimus hic
+                                    tempore
+                                    error
+                                    ea fugit odio sit, nesciunt dolorem,
+                                    consequatur
+                                    natus veritatis omnis aperiam ut,
+                                    exercitationem
+                                    dicta.
+                                </div>
+                                <div class="card__button">
+                                    <a href="#id-card">Buttom
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card__column">
+                                <div class="card__image">
+                                    <img src="img/main/08.png"
+                                        alt="picture">
+                                </div>
+                                <div class="card__text">
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Sint quis cupiditate
+                                    inventoreLorem, ipsum dolor sit amet
+                                    consectetur
+                                    adipisicing
+                                    elit. Ad laboriosam aut et ducimus hic
+                                    tempore
+                                    error
+                                    ea fugit odio sit, nesciunt dolorem,
+                                    consequatur
+                                    natus veritatis omnis aperiam ut,
+                                    exercitationem
+                                    dicta.
+                                    officiis adipisci iusto id deleniti cum
+                                    dolores
+                                    earum. Tenetur nesciunt, aliquam enim
+                                    delectus
+                                    sit illum maiores nulla exercitationem?
+                                </div>
+                                <div class="card__button">
+                                    <a href="#id-card">Buttom
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card__column">
+                                <div class="card__image">
+                                    <img src="img/main/09.png"
+                                        alt="picture">
+                                </div>
+                                <div class="card__text">
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Sint quis cupiditate
+                                    inventore
+                                    officiis adipisci iusto id deleniti cum
+                                    dolores
+                                    earum. Tenetur nesciunt, aliquam enim
+                                    delectus
+                                    sit illum maiores nulla
+                                    exercitationem?Lorem, ipsum dolor sit amet
+                                    consectetur
+                                    adipisicing
+                                    elit. Ad laboriosam aut et ducimus hic
+                                    tempore
+                                    error
+                                    ea fugit odio sit, nesciunt dolorem,
+                                    consequatur
+                                    natus veritatis omnis aperiam ut,
+                                    exercitationem
+                                    dicta.Lorem, ipsum dolor sit amet
+                                    consectetur
+                                    adipisicing
+                                    elit. Ad laboriosam aut et ducimus hic
+                                    tempore
+                                    error
+                                    ea fugit odio sit, nesciunt dolorem,
+                                    consequatur
+                                    natus veritatis omnis aperiam ut,
+                                    exercitationem
+                                    dicta.
+                                </div>
+                                <div class="card__button">
+                                    <a href="#id-card">Buttom
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card__column">
+                                <div class="card__image">
+                                    <img src="img/main/06.png"
+                                        alt="picture">
+                                </div>
+                                <div class="card__text">
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Sint quis cupiditate
+                                    inventore
+                                    officiis adipisci iusto id deleniti cum
+                                    doloresLorem, ipsum dolor sit amet
+                                    consectetur
+                                    adipisicing
+                                    elit. Ad laboriosam aut et ducimus hic
+                                    tempore
+                                    error
+                                    ea fugit odio sit, nesciunt dolorem,
+                                    consequatur
+                                    natus veritatis omnis aperiam ut,
+                                    exercitationem
+                                    dicta.Lorem, ipsum dolor sit amet
+                                    consectetur
+                                    adipisicing
+                                    elit. Ad laboriosam aut et ducimus hic
+                                    tempore
+                                    error
+                                    ea fugit odio sit, nesciunt dolorem,
+                                    consequatur
+                                    natus veritatis omnis aperiam ut,
+                                    exercitationem
+                                    dicta.
+                                    earum. Tenetur nesciunt, aliquam enim
+                                    delectus
+                                    sit illum maiores nulla exercitationem?
+                                </div>
+                                <div class="card__button">
+                                    <a href="#id-card">Buttom
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="page__text article">
+                        <div class="article__item">
+                            <div class="article__image">
+                                <img src="img/main/09.png" alt="picture">
+                            </div>
+                            <div class="article__text">
+                                Lorem, ipsum dolor sit amet consectetur
+                                adipisicing
+                                elit. Ad laboriosam aut et ducimus hic tempore
+                                error
+                                ea fugit odio sit, nesciunt dolorem, consequatur
+                                natus veritatis omnis aperiam ut,
+                                exercitationemLorem, ipsum dolor sit amet
+                                consectetur
+                                adipisicing
+                                elit. Ad laboriosam aut et ducimus hic tempore
+                                error
+                                ea fugit odio sit, nesciunt dolorem, consequatur
+                                natus veritatis omnis aperiam ut, exercitationem
+                                dicta.Lorem, ipsum dolor sit amet consectetur
+                                adipisicing
+                                elit. Ad laboriosam aut et ducimus hic tempore
+                                error
+                                ea fugit odio sit, nesciunt dolorem, consequatur
+                                natus veritatis omnis aperiam ut, exercitationem
+                                dicta.
+                                dicta.
+                            </div>
+                        </div>
+                        <div class="article__item">
+                            <div class="article__image">
+                                <img src="img/main/08.png" alt="picture">
+                            </div>
+                            <div class="article__text">
+                                Lorem, ipsum dolor sit amet consectetur
+                                adipisicing
+                                elit. Ad laboriosam aut et ducimus hic tempore
+                                error
+                                ea fugit odio sit, nesciunt dolorem,
+                                consequaturLorem, ipsum dolor sit amet
+                                consectetur
+                                adipisicing
+                                elit. Ad laboriosam aut et ducimus hic tempore
+                                error
+                                ea fugit odio sit, nesciunt dolorem, consequatur
+                                natus veritatis omnis aperiam ut, exercitationem
+                                dicta.Lorem, ipsum dolor sit amet consectetur
+                                adipisicing
+                                elit. Ad laboriosam aut et ducimus hic tempore
+                                error
+                                ea fugit odio sit, nesciunt dolorem, consequatur
+                                natus veritatis omnis aperiam ut, exercitationem
+                                dicta.
+                                natus veritatis omnis aperiam ut, exercitationem
+                                dicta.
+                            </div>
+                        </div>
+                        <div class="article__item">
+                            <div class="article__image">
+                                <img src="img/main/07.png" alt="picture">
+                            </div>
+                            <div class="article__text">
+                                Lorem, ipsum dolor sit amet consectetur
+                                adipisicing
+                                elit. Ad laboriosam aut et ducimus hic
+                                temporeLorem, ipsum dolor sit amet consectetur
+                                adipisicing
+                                elit. Ad laboriosam aut et ducimus hic tempore
+                                error
+                                ea fugit odio sit, nesciunt dolorem, consequatur
+                                natus veritatis omnis aperiam ut, exercitationem
+                                dicta.Lorem, ipsum dolor sit amet consectetur
+                                adipisicing
+                                elit. Ad laboriosam aut et ducimus hic tempore
+                                error
+                                ea fugit odio sit, nesciunt dolorem, consequatur
+                                natus veritatis omnis aperiam ut, exercitationem
+                                dicta.
+                                ea fugit odio sit, nesciunt dolorem, consequatur
+                                natus veritatis omnis aperiam ut, exercitationem
+                                dicta.
+                            </div>
+                        </div>
+                        <dic class="article__item">
+                            <div class="article__image">
+                                <img src="img/main/06.png" alt="picture">
+                            </div>
+                            <div class="article__text">
+                                Lorem, ipsum dolor sit amet consectetur
+                                adipisicing
+                                elit. Ad laboriosam aut et ducimus hic
+                                temporeLorem, ipsum dolor sit amet consectetur
+                                adipisicing
+                                elit. Ad laboriosam aut et ducimus hic tempore
+                                error
+                                ea fugit odio sit, nesciunt dolorem, consequatur
+                                natus veritatis omnis aperiam ut, exercitationem
+                                dicta.Lorem, ipsum dolor sit amet consectetur
+                                adipisicing
+                                elit. Ad laboriosam aut et ducimus hic tempore
+                                error
+                                ea fugit odio sit, nesciunt dolorem, consequatur
+                                natus veritatis omnis aperiam ut, exercitationem
+                                dicta.
+                                error
+                                ea fugit odio sit, nesciunt dolorem, consequatur
+                                natus veritatis omnis aperiam ut, exercitationem
+                                dicta.
+                            </div>
+                        </dic>
+                        <div class="article__item">
+                            <div class="article__image">
+                                <img src="img/main/10.png" alt="picture">
+                            </div>
+                            <div class="article__text">
+                                Lorem, ipsum dolor sit amet consectetur
+                                adipisicing
+                                elit. Ad laboriosam aut et ducimus hic tempore
+                                error
+                                ea fugit odio sit, nesciunt dolorem,
+                                consequaturLorem, ipsum dolor sit amet
+                                consectetur
+                                adipisicing
+                                elit. Ad laboriosam aut et ducimus hic tempore
+                                error
+                                ea fugit odio sit, nesciunt dolorem, consequatur
+                                natus veritatis omnis aperiam ut, exercitationem
+                                dicta.Lorem, ipsum dolor sit amet consectetur
+                                adipisicing
+                                elit. Ad laboriosam aut et ducimus hic tempore
+                                error
+                                ea fugit odio sit, nesciunt dolorem, consequatur
+                                natus veritatis omnis aperiam ut, exercitationem
+                                dicta.
+                                natus veritatis omnis aperiam ut, exercitationem
+                                dicta.
+                                ea fugit odio sit, nesciunt dolorem, consequatur
+                                natus veritatis omnis aperiam ut, exercitationem
+                                dicta.Lorem, ipsum dolor sit amet consectetur
+                                adipisicing
+                                elit. Ad laboriosam aut et ducimus hic tempore
+                                error
+                                ea fugit odio sit, nesciunt dolorem, consequatur
+                                natus veritatis omnis aperiam ut, exercitationem
+                                dicta.
+                                natus veritatis omnis aperiam ut, exercitationem
+                                dicta.
+                                ea fugit odio sit, nesciunt dolorem, consequatur
+                                natus veritatis omnis aperiam ut, exercitationem
+                                dicta.Lorem, ipsum dolor sit amet consectetur
+                                adipisicing
+                                elit. Ad laboriosam aut et ducimus hic tempore
+                                error
+                                ea fugit odio sit, nesciunt dolorem, consequatur
+                                natus veritatis omnis aperiam ut, exercitationem
+                                dicta.
+                                natus veritatis omnis aperiam ut, exercitationem
+                                dicta.
+                                ea fugit odio sit, nesciunt dolorem, consequatur
+                                natus veritatis omnis aperiam ut, exercitationem
+                                dicta.Lorem, ipsum dolor sit amet consectetur
+                                adipisicing
+                                elit. Ad laboriosam aut et ducimus hic tempore
+                                error
+                                ea fugit odio sit, nesciunt dolorem, consequatur
+                                natus veritatis omnis aperiam ut, exercitationem
+                                dicta.
+                                natus veritatis omnis aperiam ut, exercitationem
+                                dicta.
+                                ea fugit odio sit, nesciunt dolorem, consequatur
+                                natus veritatis omnis aperiam ut, exercitationem
+                                dicta.Lorem, ipsum dolor sit amet consectetur
+                                adipisicing
+                                elit. Ad laboriosam aut et ducimus hic tempore
+                                error
+                                ea fugit odio sit, nesciunt dolorem, consequatur
+                                natus veritatis omnis aperiam ut, exercitationem
+                                dicta.
+                                natus veritatis omnis aperiam ut, exercitationem
+                                dicta. ea fugit odio sit, nesciunt dolorem,
+                                consequatur
+                                natus veritatis omnis aperiam ut, exercitationem
+                                dicta.Lorem, ipsum dolor sit amet consectetur
+                                adipisicing
+                                elit. Ad laboriosam aut et ducimus hic tempore
+                                error
+                                ea fugit odio sit, nesciunt dolorem, consequatur
+                                natus veritatis omnis aperiam ut, exercitationem
+                                dicta.
+                                natus veritatis omnis aperiam ut, exercitationem
+                                dicta. ea fugit odio sit, nesciunt dolorem,
+                                consequatur
+                                natus veritatis omnis aperiam ut, exercitationem
+                                dicta.Lorem, ipsum dolor sit amet consectetur
+                                adipisicing
+                                elit. Ad laboriosam aut et ducimus hic tempore
+                                error
+                                ea fugit odio sit, nesciunt dolorem, consequatur
+                                natus veritatis omnis aperiam ut, exercitationem
+                                dicta.
+                                natus veritatis omnis aperiam ut, exercitationem
+                                dicta. ea fugit odio sit, nesciunt dolorem,
+                                consequatur
+                                natus veritatis omnis aperiam ut, exercitationem
+                                dicta.Lorem, ipsum dolor sit amet consectetur
+                                adipisicing
+                                elit. Ad laboriosam aut et ducimus hic tempore
+                                error
+                                ea fugit odio sit, nesciunt dolorem, consequatur
+                                natus veritatis omnis aperiam ut, exercitationem
+                                dicta.
+                                natus veritatis omnis aperiam ut, exercitationem
+                                dicta.
+                                ea fugit odio sit, nesciunt dolorem, consequatur
+                                natus veritatis omnis aperiam ut, exercitationem
+                                dicta.Lorem, ipsum dolor sit amet consectetur
+                                adipisicing
+                                elit. Ad laboriosam aut et ducimus hic tempore
+                                error
+                                ea fugit odio sit, nesciunt dolorem, consequatur
+                                natus veritatis omnis aperiam ut, exercitationem
+                                dicta.
+                                natus veritatis omnis aperiam ut, exercitationem
+                                dicta.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <footer class="footer">
+                <div class="footer__container">
+                    <h2 class="footer__title">
+                        footer
+                    </h2>
+                </div>
+
+            </footer>
+        </body>
+
+    </html>
