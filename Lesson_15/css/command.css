@@ -1,0 +1,127 @@
+.button {
+    font-weight: 700;
+    line-height: 1.25;
+    letter-spacing: 0.5px;
+    color: #ffffff;
+    background: linear-gradient(55.95deg, #ff3f3a 0%, #f75e05 100%);
+    padding: 16px 40px;
+    border-radius: 4px;
+    position: relative;
+    display: inline-block;
+}
+
+.button--border {
+    background: transparent;
+    position: relative;
+    border: 1px solid #ff3f3a;
+    color: #ff3f3a;
+    padding: 17px 40px;
+    border-radius: 4px;
+}
+/* .button--border:hover {
+    color: #fff;
+    border: 1px solid #ff3f3a;
+    background-color: #ff3f3a;
+    border-radius: 4px;
+} */
+.button--border:active {
+    color: #fff;
+    border: 1px solid #ff3f3a;
+    background-color: #ff3f3a;
+    border-radius: 4px;
+}
+/* .button {
+    border-radius: 4px;
+    letter-spacing: 0.5px;
+    font-weight: 700;
+    line-height: 1.25;
+    color: #fff;
+    display: inline-block;
+    padding: 16px 40px;
+    position: relative;
+    background: linear-gradient(55.95deg, #ff3f3a 0%, #f75e05 100%);
+}
+.button span {
+    position: relative;
+    z-index: 2;
+}
+.button::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transition: opacity 0.3s ease 0s;
+    opacity: 0;
+    border-radius: 4px;
+    background: linear-gradient(55.95deg, #ca3530 0%, #c94d05 100%);
+}
+.button:hover::before {
+    opacity: 1;
+} */
+.achievement-main {
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    justify-content: space-between;
+}
+.achievement-main__item {
+    position: relative;
+    display: flex;
+}
+.item-achievement {
+    display: flex;
+    color: #1e212c;
+    align-items: center;
+    gap: 12px;
+}
+.item-achievement__value {
+    font-weight: 900;
+    font-size: 46px;
+    line-height: 130%;
+    color: #1e212c;
+}
+.item-achievement__text {
+    line-height: 160%;
+}
+.achievement-main__item::after {
+    content: "";
+    flex: 0 0 8px;
+    height: 8px;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #ff3f3a;
+}
+.item-achievement::after {
+    content: "";
+    flex: 0 0 8px;
+    height: 8px;
+    background: #ff3f3a;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.block {
+    color: #1e212c;
+}
+.block__title {
+    font-weight: 900;
+    font-size: 46px;
+    line-height: 130%;
+    color: #1e212c;
+}
+.block__text {
+    line-height: 160%;
+}
+.block::after {
+    content: "";
+    width: 8px;
+    height: 8px;
+    background: #ff3f3a;
+    border-radius: 50%;
+    display: inline-block;
+}
