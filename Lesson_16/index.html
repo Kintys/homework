@@ -113,29 +113,29 @@
                                     <div class="form-questions__item">
                                         <label class="form-questions-label" for="first-name">First Name*
                                         </label>
-                                        <input class="form-questions__input-text" type="name" placeholder="Your first name" id="first-name" required>
+                                        <input class="form-questions__input-text" name="name" type="text" placeholder="Your first name" id="first-name" required>
                                     </div>
                                     <div class="form-questions__item">
                                         <label class="form-questions-label" for="last-name">
                                             Last Name*
                                         </label>
-                                        <input class="form-questions__input-text" type="name" placeholder="Your last name" id="last-name" required>
+                                        <input class="form-questions__input-text" name="last-name" type="text" placeholder="Your last name" id="last-name" required>
                                     </div>
                                     <div class="form-questions__item">
                                         <label class="form-questions-label" for="work-email">
                                             Email*
                                         </label>
-                                        <input class="form-questions__input-text" type="email" placeholder="Your working email" id="work-email" required>
+                                        <input class="form-questions__input-text" name="email" type="email" placeholder="Your working email" id="work-email" required>
                                     </div>
                                     <div class="form-questions__item">
                                         <label class="form-questions-label" for="work-phone">
                                             Phone
                                         </label>
-                                        <input class="form-questions__input-text" type="phone" placeholder="Your phone number" id="work-phone">
+                                        <input class="form-questions__input-text" name="phone" type="number" placeholder="Your phone number" id="work-phone">
                                     </div>
                                     <div class="form-questions__textarea">
                                         <label class="form-questions-label" for="message">Message*</label>
-                                        <textarea name="textarea" id="message" cols="30" placeholder="Your message" required rows="10"></textarea>
+                                        <textarea name="textarea" type="textarea" id="message" cols="30" placeholder="Your message" required rows="10"></textarea>
                                     </div>
                                     <div class="form-questions__checkbox
                                         checkbox">
@@ -147,7 +147,7 @@
                                         </label>
                                     </div>
                                     <div class="form-questions__button">
-                                        <button class="button button--width" type="submit"><span>
+                                        <button class="button button--width" name="send-message" type="submit"><span>
                                                 Send message</span></button>
                                     </div>
                                 </form>
@@ -161,7 +161,7 @@
                             <form class="form" action="https://jsonplaceholder.typicode.com/posts" method="get" enctype="multipart/form-data">
                                 <div class="form__line">
                                     <label class="form__label" for="name">Введіть ім'я</label>
-                                    <input class="form__input" id="name" placeholder="Введіть ім'я" name="name" autocomplete="off" required type="test">
+                                    <input class="form__input" id="name" placeholder="Введіть ім'я" name="name" autocomplete="off" required type="text">
                                 </div>
                                 <div class="form__line"> <label class="form__label" for="pass">Введіть пароль</label>
                                     <input class="form__input" id="pass" placeholder="Введіть пароль" name="password" autocomplete="off" required type="password">
@@ -172,7 +172,7 @@
                                 </div>
                                 <div class="form__line">
                                     <label class="form__label" for="phone">Введіть ваш номер</label>
-                                    <input class="form__input" id="phone" placeholder="Введіть ваш номер" name="E-mail" autocomplete="off" required type="number">
+                                    <input class="form__input" id="phone" placeholder="Введіть ваш номер" name="number" autocomplete="off" required type="number">
                                 </div>
                                 <div class="form__line">
                                     <label class="form__label" for="color">Виберіть колір</label>
