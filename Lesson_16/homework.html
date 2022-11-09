@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="zxx">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <title>Document</title>
+    </head>
+    <body>
+        <header></header>
+        <main class="page">
+            <div class="expl__container">
+                <div class="expl__block block-expl">
+                    <div class="block-expl__container">
+                        <div class="block-expl__form form">
+                            <form class="form"
+                                action="https://jsonplaceholder.typicode.com/posts"
+                                method="get"
+                                enctype="multipart/form-data">
+                                <div class="form__line">
+                                    <label class="form__label" for="name">Введіть
+                                        ім'я</label>
+                                    <input class="form__input" id="name"
+                                        placeholder="Введіть ім'я" name="name"
+                                        autocomplete="off"
+                                        required type="test">
+                                </div>
+                                <div class="form__line">
+                                    <label class="form__label" for="pass">Введіть
+                                        пароль</label>
+                                    <input class="form__input" id="pass"
+                                        placeholder="Введіть пароль"
+                                        name="password"
+                                        autocomplete="off"
+                                        required type="password">
+                                </div>
+                                <div class="form__line">
+                                    ваш E-mail</label>
+                                <input class="form__input" id="E-mail"
+                                    placeholder="Введіть ваш E-mail"
+                                    name="E-mail"
+                                    autocomplete="off"
+                                    required
+                                    type="email">
+                            </div>
+                            <div class="form__line">
+                                <label class="form__label" for="phone">Введіть
+                                    ваш номер</label>
+                                <input class="form__input" id="phone"
+                                    placeholder="Введіть ваш номер"
+                                    name="E-mail"
+                                    autocomplete="off"
+                                    required
+                                    type="number">
+                            </div>
+                            <div class="form__line">
+                                <label class="form__label" for="color">Виберіть
+                                    колір</label>
+                                <input class="form__input" id="color"
+                                    placeholder="Виберіть колір"
+                                    name="color"
+                                    autocomplete="off"
+                                    type="color" value="#000">
+                            </div>
+                            <div class="form__line">
+                                <label class="form__label" for="search">Введіть
+                                    пошуковий запит</label>
+                                <input class="form__input" id="search"
+                                    placeholder="Введіть пошуковий запит"
+                                    name="search"
+                                    autocomplete="off"
+                                    type="search">
+                            </div>
+                            <div class="form__line">
+                                <label class="form__label" for="date">Вкажіть
+                                    дату</label>
+                                <input class="form__input" id="date"
+                                    placeholder="Введіть пошуковий запит"
+                                    name="date"
+                                    autocomplete="off"
+                                    type="date">
+                            </div>
+                            <div class="form__line">
+                                <label class="form__label" for="range">
+                                </label>
+                                <input class="form__input" id="range"
+                                    name="range"
+                                    autocomplete="off"
+                                    type="range">
+                            </div>
+                            <div class="form__line">
+                                <label class="form__label
+                                    form__label--checbox"
+                                    for="checkbox">
+                                    Згода на обробку моїх персональних даних</label>
+                                <input class="form__input" id="checkbox"
+                                    name="checkbox"
+                                    autocomplete="off"
+                                    required
+                                    checked
+                                    type="checkbox">
+                            </div> <div class="form__line">
+                                <label class="form__label
+                                    form__label--agreement"
+                                    for="agreement">
+                                    Угода користувача</label>
+                                <input class="form__input" id="agreement"
+                                    name="agreement"
+                                    autocomplete="off"
+                                    required
+                                    type="checkbox">
+                            </div>
+                            <div class="form__line">
+                                <h2 class="form__title">Способи доставки:
+                                </h2>
+                                <div class="form__text">
+                                    <label class="form__label
+                                        form__label--radio-label"
+                                        for="mail">
+                                        Cамовивіз з відділення Укрпошти;
+                                    </label>
+                                    <input class="form__input
+                                        form__input--box-radio" id="mail"
+                                        name="delivery"
+                                        autocomplete="off"
+                                        required
+                                        type="radio">
+                                </div>
+                                <div class="form__text">
+                                    <label class="form__label
+                                        form__label--radio-label"
+                                        for="meest-express">
+                                        Cамовивіз з відділення Meest
+                                        Express;
+                                    </label>
+                                    <input class="form__input
+                                        form__input--box-radio"
+                                        id="meest-express"
+                                        name="delivery"
+                                        autocomplete="off"
+                                        required
+                                        type="radio">
+                                </div>
+                                <div class="form__text">
+                                    <label class="form__label
+                                        form__label--radio-label"
+                                        for="courier-meest-express">
+                                        Кур’єром Meest Express;
+                                    </label>
+                                    <input class="form__input
+                                        form__input--box-radio"
+                                        id="courier-meest-express"
+                                        name="delivery"
+                                        autocomplete="off"
+                                        required
+                                        type="radio">
+                                </div>
+                                <div class="form__text">
+                                    <label class="form__label
+                                        form__label--radio-label"
+                                        for="courier-delivery">
+                                        Самовивіз з відділення Delivery;
+                                    </label>
+                                    <input class="form__input
+                                        form__input--box-radio"
+                                        id="courier-delivery"
+                                        name="delivery"
+                                        autocomplete="off"
+                                        required
+                                        type="radio">
+                                </div>
+                                <div class="form__text">
+                                    <label class="form__label
+                                        form__label--radio-label"
+                                        for="courier-shop">
+                                        Кур’єром вашого магазину;
+                                    </label>
+                                    <input class="form__input
+                                        form__input--box-radio"
+                                        id="courier-shop"
+                                        name="delivery"
+                                        autocomplete="off"
+                                        required
+                                        type="radio">
+                                </div>
+                            </div>
+                            <div class="form__line">
+                                <label class="form__label"
+                                    for="file">
+                                    Додати файл</label>
+                                <input class="form__input" id="file"
+                                    name="file"
+                                    autocomplete="off"
+                                    accept="image/png, image/svg"
+                                    type="file">
+                            </div>
+                            <div class="form__line">
+                                <label class="form__label"
+                                    for="textarea">
+                                    Ваше повідомлення </label>
+                                <textarea class="form__input"
+                                    autocomplete="off" id="textarea"></textarea>
+                            </div>
+                            <div class="form__line">
+                                <label class="form__label"
+                                    for="textarea">
+                                    Ваше повідомлення </label>
+                                <select name="list" id="list">
+                                    <option value="">Google Pay та Apple
+                                        Pay;</option>
+                                    <option value="">Blik</option>
+                                    <option value="">PrivatPay</option>
+                                    <option value="">Оплата частинами та
+                                        Миттєва розстрочка від ПриватБанк;</option>
+                                    <option value="">Оплата в кредит</option>
+                                    <option value="">Оплата під час
+                                        отримання товару.</option>
+                                </select>
+                            </div>
+                            <div class="form__actions">
+                                <div class="button">
+                                    <button class="button__submit"
+                                        type="submit">
+                                        Вiдправити
+                                    </button>
+                                </div>
+                                <div class="form__actions">
+                                    <div class="button">
+                                        <button class="button__reset"
+                                            type="reset">Обновити</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer></footer>
+    </body>
+</html>
