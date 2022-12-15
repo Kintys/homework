@@ -1,0 +1,80 @@
+.wrapper {
+    overflow: hidden;
+    min-height: 100%;
+    flex-direction: column;
+    position: relative;
+    display: flex;
+}
+.wrapper > main {
+    flex-grow: 1;
+}
+[class*="__container"] {
+    max-width: 1230px;
+    margin: 0 auto;
+}
+
+/* ====================== */
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 15px;
+    font-size: 50px;
+    font-weight: 800;
+    text-decoration: underline;
+}
+.page {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    gap: 50px;
+    padding: 100px 15px;
+}
+.page__lesson-one {
+    background: rgba(2, 91, 96, 0.162);
+}
+.page__lesson-two {
+    background: rgba(74, 96, 2, 0.162);
+}
+.page__lesson-three {
+    background: rgba(35, 3, 72, 0.142);
+}
+.lesson {
+    padding: 100px 0px;
+    display: grid;
+    justify-items: center;
+    gap: 25px;
+    text-align: center;
+}
+.lesson__title {
+    font-size: 30px;
+    font-weight: 900;
+    line-height: 2;
+    font-style: oblique;
+    letter-spacing: 5px;
+}
+.lesson__text {
+    display: grid;
+    grid-template-columns: minmax(200px, 400px);
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.lesson__subtitle {
+    font-size: 20px;
+    font-weight: 700;
+    font-style: italic;
+}
+.lesson__imege img {
+    max-width: 100%;
+}
+.lesson__text--blue {
+    color: blue;
+}
+.lesson__text--red {
+    color: red;
+}
+.lesson__one {
+    margin-bottom: 30px;
+}
