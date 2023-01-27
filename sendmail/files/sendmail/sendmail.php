@@ -8,7 +8,7 @@
 
 	$mail = new PHPMailer(true);
 	$mail->CharSet = 'UTF-8';
-	$mail->setLanguage('ru', 'phpmailer/language/');
+	$mail->setLanguage('en', 'phpmailer/language/');
 	$mail->IsHTML(true);
 
 	/*
@@ -36,36 +36,34 @@
 	//}	
 	
 	if(trim(!empty($_POST['name']))){
-		$body.='<p><strong>Имя:</strong> '.$_POST['name'].'</p>';
+		$body.='<p><strong>Name*:</strong> '.$_POST['name'].'</p>';
 	}
 	if(trim(!empty($_POST['email']))){
-		$body.='<p><strong>E-mail:</strong> '.$_POST['email'].'</p>';
+		$body.='<p><strong>E-mail*:</strong> '.$_POST['email'].'</p>';
 	}
 	if(trim(!empty($_POST['courier']))){
-		$body.='<p><strong>Рука:</strong> '.$courier.'</p>';
+		$body.='<p><strong>Courier:</strong> '.$courier.'</p>';
 	}
-	if(trim(!empty($_POST['country']))){
-		$body.='<p><strong>Возраст:</strong> '.$_POST['country'].'</p>';
-	}
+	 if(trim(!empty($_POST['country']))){
+	 	$body.='<p><strong>Country:</strong> '.$_POST['country'].'</p>';
+	 }
 	
 	if(trim(!empty($_POST['message']))){
-		$body.='<p><strong>Сообщение:</strong> '.$_POST['message'].'</p>';
+		$body.='<p><strong>Message:</strong> '.$_POST['message'].'</p>';
 	}
 	
-
-	/*
 	//Прикріпити файл
-	if (!empty($_FILES['image']['tmp_name'])) {
-		//шлях завантаження файлу
-		$filePath = __DIR__ . "/files/sendmail/attachments/" . $_FILES['image']['name']; 
-		//грузимо файл
-		if (copy($_FILES['image']['tmp_name'], $filePath)){
-			$fileAttach = $filePath;
-			$body.='<p><strong>Фото у додатку</strong>';
-			$mail->addAttachment($fileAttach);
-		}
-	}
-	*/
+	// if (!empty($_FILES['image']['tmp_name'])) {
+	// 	//шлях завантаження файлу
+	// 	$filePath = __DIR__ . "/files/sendmail/attachments/" . $_FILES['image']['name']; 
+	// 	//грузимо файл
+	// 	if (copy($_FILES['image']['tmp_name'], $filePath)){
+	// 		$fileAttach = $filePath;
+	// 		$body.='<p><strong>Фото у додатку</strong>';
+	// 		$mail->addAttachment($fileAttach);
+	// 	}
+	// }
+	
 
 	$mail->Body = $body;
 
