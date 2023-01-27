@@ -22,9 +22,9 @@
 	*/
 
 	//Від кого лист
-	$mail->setFrom('from@gmail.com', 'Фрілансер по життю'); // Вказати потрібний E-mail
+	$mail->setFrom('dima.sytnik92@gmail.com', 'Dima Sytnik'); // Вказати потрібний E-mail
 	//Кому відправити
-	$mail->addAddress('to@gmail.com'); // Вказати потрібний E-mail
+	$mail->addAddress('dima.sytnik.2017@mail.ru'); // Вказати потрібний E-mail
 	//Тема листа
 	$mail->Subject = 'Вітання! Це "Фрілансер по життю"';
 
@@ -35,6 +35,24 @@
 		//$body.=$_POST['email'];
 	//}	
 	
+	if(trim(!empty($_POST['name']))){
+		$body.='<p><strong>Имя:</strong> '.$_POST['name'].'</p>';
+	}
+	if(trim(!empty($_POST['email']))){
+		$body.='<p><strong>E-mail:</strong> '.$_POST['email'].'</p>';
+	}
+	if(trim(!empty($_POST['courier']))){
+		$body.='<p><strong>Рука:</strong> '.$courier.'</p>';
+	}
+	if(trim(!empty($_POST['country']))){
+		$body.='<p><strong>Возраст:</strong> '.$_POST['country'].'</p>';
+	}
+	
+	if(trim(!empty($_POST['message']))){
+		$body.='<p><strong>Сообщение:</strong> '.$_POST['message'].'</p>';
+	}
+	
+
 	/*
 	//Прикріпити файл
 	if (!empty($_FILES['image']['tmp_name'])) {
