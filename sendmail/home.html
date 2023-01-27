@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>HomePage</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20230126220201">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+			</div>
+		</header>
+		<main class="page">
+			<div class="page__container">
+				<form id="form" class="page__form form" action="files/sendmail/sendmail.php" method="POST">
+					<h2 class="form__title">Відправка форми на почту</h2>
+					<div class="form__item">
+						<label for="formName" class="form__label">Name*:</label>
+						<input id="formName" autocomplete="off" type="text" name="form[name]" placeholder="Name" class="form__input _req">
+					</div>
+					<div class="form__item">
+						<label for="formEmail" class="form__label">E-mail*:</label>
+						<input id="formEmail" class="form__input _req _email" type="text" name="form[email]" placeholder="E-mail">
+					</div>
+					<div class="form__item">
+						<label class="form__label">Сourier</label>
+						<div class="form__options options">
+							<div class="options__item">
+								<input id="o_1" class="options__input" checked type="radio" value="1" name="form[courier]">
+								<label for="o_1" class="options__label"><span class="options__text">DPD</span></label>
+							</div>
+							<div class="options__item">
+								<input id="o_2" class="options__input" type="radio" value="2" name="form[courier]">
+								<label for="o_2" class="options__label"><span class="options__text">UPS</span></label>
+							</div>
+						</div>
+					</div>
+					<div class="form__item">
+						<label class="page__label">Message:</label>
+						<textarea name="form[message]" id="formMessage" class="form__textarea"></textarea>
+					</div>
+					<div class="form__item">
+						<label class="form__label">Country:</label>
+						<select name="form[country]" class="page__select">
+							<option value="1" selected>Poland</option>
+							<option value="2">The US</option>
+							<option value="3">The UK</option>
+							<option value="4">Ukraine</option>
+						</select>
+					</div>
+					<div class="form__item">
+						<label class="form__label">Image:</label>
+						<div class="file">
+							<div class="file__item">
+								<input id="formImage" type="file" name="form[image]" accept=".jpg, .png, .gif" class="file__input">
+								<div class="file__button">
+									Add file
+								</div>
+							</div>
+							<div class="file__preview"></div>
+						</div>
+					</div>
+					<div class="form__item">
+						<div class="checkbox">
+							<input id="formAgreement" checked type="checkbox" name="form[agreement]" class="checkbox__input _req">
+							<label for="formAgreement" class="checkbox__label">I agree to the processing of personal data provided in this document for realising the recruitment process pursuant to the Personal Data Protection Act of 10 May 2018 (Journal of Laws 2018, item 1000) and in agreement with Regulation (EU) 2016/679 of the European Parliament and of the Council of 27 April 2016 on the protection of natural persons with regard to the processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC (General Data Protection Regulation).</label>
+						</div>
+					</div>
+					<button class="form__button" type="submit" class="button">Send</button>
+				</form>
+			</div>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+			</div>
+		</footer>
+	</div>
+	<script src="js/app.min.js?_v=20230126220201"></script>
+</body>
+
+</html>
